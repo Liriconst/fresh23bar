@@ -1,0 +1,24 @@
+@import "../../config";
+
+/*#region Desktop*/
+.pageSodaDt {
+  @include flexRowRelative;
+  height: calc(100vh - 10vw);
+  width: 30vw;
+  margin: 5px 23vw;
+}
+/*#endregion Desktop*/
+
+.testFonts {
+  display: flex;
+  flex-direction: row;
+  height: 100vh !important;
+  width: 100vw !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  font-family: "Chalk cyrillic freehand", sans-serif;
+  font-size: 72px;
+  color: white;
+}

@@ -1,4 +1,4 @@
-//@import "config";
+@import "config";
 
 .homeCarousel {
   display: flex;
@@ -16,4 +16,16 @@
   background-image: url("/static/img/bg.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.testFonts {
+  display: flex;
+  flex-direction: row;
+  height: 400px !important;
+  width: 100vw !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: "Chalk cyrillic freehand", sans-serif;
+  font-size: 72px;
+  color: white;
 }

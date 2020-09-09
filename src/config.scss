@@ -11,6 +11,8 @@ $size-base: 16px;
   @return #{$size / $size-base}rem;
 }
 
+$size-width: ptr(886px);
+
 @mixin flexRowRelative {
   display: flex;
   flex-direction: row;

@@ -7,8 +7,9 @@ import {ApolloProvider} from "react-apollo";
 import {client} from "./index";
 import {createBrowserHistory} from 'history';
 import logo from './logo.svg';
-import { Carousel, Radio } from 'antd';
+import { Carousel, Radio, Button } from 'antd';
 import { RadioChangeEvent } from 'antd/lib/radio';
+import SodaMixes from "./components/sodaMixes/SodaMixes";
 
 const contentStyle = {
   height: '160px',
@@ -41,16 +42,16 @@ class AppHeaderInner extends React.Component<{}, {
         <div className={styles.pageHome}>
           <Carousel className={styles.homeCarousel} dotPosition={dotPosition as any}>
             <div>
-              <h3 style={{background: "none !important", color: "white"}}>1</h3>
+              <SodaMixes/>
             </div>
             <div>
-              <h3 style={{background: "none !important"}}>2</h3>
+              <SodaMixes/>
             </div>
             <div>
-              <h3 style={{background: "none !important"}}>3</h3>
+              <SodaMixes/>
             </div>
             <div>
-              <h3 style={{background: "none !important"}}>4</h3>
+              <SodaMixes/>
             </div>
           </Carousel>
         </div>
@@ -70,7 +71,8 @@ const App: React.FC = () => {
             <AppHeader/>
             <Switch>
               {/*-------------------------*/}
-              <Route path="/workplace-safety/test">
+              <Route path="/soda-mixes">
+                <SodaMixes/>
               </Route>
               {/*-------------------------*/}
               <Route path="/workplace-safety">
