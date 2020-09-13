@@ -3,9 +3,9 @@
 /*#region Desktop*/
 .pageSodaDt {
   @include flexRowRelative;
-  height: calc(100vh - 10vw);
-  width: 30vw;
-  margin: 5px 23vw;
+  height: 1024px;
+  width: 1024px;
+  overflow: hidden !important;
 }
 /*#endregion Desktop*/
 
