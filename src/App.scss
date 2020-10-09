@@ -1,8 +1,21 @@
-.appCar {
-  &.ant-carousel {
-    height: 1024px !important;
-    &.slick-list {
-      height: 1024px !important;
+.homeCarousel {
+  display: grid !important;
+  grid-template-columns: 100vw !important;
+  grid-template-rows: 100vh !important;
+  color: white !important;
+
+  & .slick-list {
+    height: 100vh !important;
+    width: 100vw !important;
+    & .slick-track {
+      & .slick-slide {
+        & .slick-active {
+          & .slick-current {
+            height: 100vh !important;
+            width: 100vw !important;
+          }
+        }
+      }
     }
   }
 }

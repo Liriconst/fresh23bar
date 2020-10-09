@@ -1,0 +1,163 @@
+@import "config";
+
+/*#region Desktop*/
+  .pageDt {
+    display: grid;
+    width: ptr(860px);
+    grid-template-columns: ptr(860px);
+    grid-template-rows: ptr(156px) 1fr;
+    margin: 5vw 0;
+  }
+
+  .pageLittleDt {
+    display: grid;
+    width: ptr(860px);
+    grid-template-columns: ptr(860px);
+    grid-template-rows: ptr(140px) 1fr;
+    margin: 5vw 0;
+  }
+
+  .listHeaderDt {
+    display: grid;
+    grid-template-columns: 1fr ptr(200px) 1px ptr(200px);
+    grid-template-rows: ptr(45px);
+    align-items: center;
+    font-family: "Roboto Slab", sans-serif;
+    text-decoration: underline;
+    font-weight: 200;
+    font-size: ptr(30px);
+    color: rgba(255, 255, 255, 0.1);
+    line-height: 1;
+    margin-top: ptr(-45px);
+  }
+
+  .listHeaderNameDt {
+    @include flexRowRelative;
+    width: 100%;
+    padding-left: ptr(150px);
+  }
+
+  .listHeaderLittleCapacityDt {
+    @include flexRowRelative;
+    width: 100%;
+    padding-left: ptr(25px);
+  }
+
+  .listHeaderBigCapacityDt {
+    @include flexRowRelative;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: ptr(25px);
+  }
+
+  .listHeaderSeparatorDt {
+    @include flexRowRelative;
+    height: ptr(30px);
+    width: 100%;
+    margin-top: ptr(7px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .positionOnePriceDt {
+    display: grid;
+    width: 100%;
+    grid-template-columns: ptr(62px) 1fr ptr(180px);
+    grid-template-rows: ptr(46px);
+    align-items: end;
+    margin-top: ptr(8px);
+  }
+
+  .positionTwoPriceDt {
+    display: grid;
+    width: 100%;
+    grid-template-columns: ptr(62px) 1fr ptr(220px) ptr(180px);
+    grid-template-rows: ptr(46px);
+    align-items: end;
+    margin-top: ptr(8px);
+  }
+
+  .positionImgDt {
+    @include flexRowRelative;
+    height: 100%;
+    width: 100%;
+    padding-right: ptr(16px);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .positionDoubleStringImgDt {
+    @include flexRowRelative;
+    height: 100%;
+    width: 100%;
+    padding-right: ptr(16px);
+    top: ptr(31px);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .fontTitleDt {
+    @include flexRowRelative;
+    height: ptr(96px);
+    width: 100%;
+    justify-content: center;
+    font-family: "Truetypewriter PolyglOTT", sans-serif;
+    font-weight: normal;
+    font-size: ptr(92px);
+    color: white;
+    line-height: 1;
+    margin-bottom: ptr(60px);
+  }
+
+  .fontTitleLittleDt {
+    @include flexRowRelative;
+    height: ptr(96px);
+    width: 100%;
+    justify-content: center;
+    font-family: "Truetypewriter PolyglOTT", sans-serif;
+    font-weight: normal;
+    font-size: ptr(92px);
+    color: white;
+    line-height: 1;
+    margin-bottom: ptr(44px);
+  }
+
+  .fontTitleInnerDt {
+    @include flexRowRelative;
+    height: ptr(96px);
+    width: 100%;
+    justify-content: center;
+    font-family: "Truetypewriter PolyglOTT", sans-serif;
+    font-weight: normal;
+    font-size: ptr(92px);
+    color: white;
+    line-height: 1;
+    margin: ptr(76px) 0 ptr(60px) 0;
+    //margin: ptr(46px) 0 ptr(30px) 0;
+  }
+
+  .fontTitleInnerLittleDt {
+    @include flexRowRelative;
+    height: ptr(96px);
+    width: 100%;
+    justify-content: center;
+    font-family: "Truetypewriter PolyglOTT", sans-serif;
+    font-weight: normal;
+    font-size: ptr(92px);
+    color: white;
+    line-height: 1;
+    margin: ptr(60px) 0 ptr(44px) 0;
+    //margin: ptr(46px) 0 ptr(30px) 0;
+  }
+
+  .fontPositionDt {
+    font-family: "LC Chalk", sans-serif;
+    font-weight: normal;
+    font-size: ptr(42px);
+    color: white;
+    line-height: 1;
+  }
+/*#endregion Desktop*/

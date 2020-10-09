@@ -10,6 +10,10 @@ import logo from './logo.svg';
 import { Carousel, Radio, Button } from 'antd';
 import { RadioChangeEvent } from 'antd/lib/radio';
 import SodaMixes from "./components/sodaMixes/SodaMixes";
+import Smoothies from "./components/smoothies/Smoothies";
+import Milkshakes from "./components/milkshakes/Milkshakes";
+import Freshes from "./components/freshes/Freshes";
+import ExoticDrinks from "./components/exoticDrinks/ExoticDrinks";
 
 const contentStyle = {
   height: '160px',
@@ -40,20 +44,16 @@ class AppHeaderInner extends React.Component<{}, {
     const { dotPosition } = this.state;
     return (
         <div className={styles.pageHome}>
-          <Carousel className={styles.homeCarousel} dotPosition={dotPosition as any}>
-            <div>
-              <SodaMixes/>
-            </div>
-            <div>
-              <SodaMixes/>
-            </div>
-            <div>
-              <SodaMixes/>
-            </div>
-            <div>
-              <SodaMixes/>
-            </div>
-          </Carousel>
+          <SodaMixes/>
+          {/*<Carousel className="homeCarousel" dotPosition={dotPosition as any}>*/}
+          {/*  <smoothies/>*/}
+          {/*  <div>*/}
+          {/*  </div>*/}
+          {/*  <div>*/}
+          {/*  </div>*/}
+          {/*  <div>*/}
+          {/*  </div>*/}
+          {/*</Carousel>*/}
         </div>
     );
   };
@@ -73,6 +73,18 @@ const App: React.FC = () => {
               {/*-------------------------*/}
               <Route path="/soda-mixes">
                 <SodaMixes/>
+              </Route>
+              <Route path="/smoothies">
+                <Smoothies/>
+              </Route>
+              <Route path="/freshes">
+                <Freshes/>
+              </Route>
+              <Route path="/milkshakes">
+                <Milkshakes/>
+              </Route>
+              <Route path="/exotic-drinks">
+                <ExoticDrinks/>
               </Route>
               {/*-------------------------*/}
               <Route path="/workplace-safety">
