@@ -14,6 +14,8 @@ import Smoothies from "./components/smoothies/Smoothies";
 import Milkshakes from "./components/milkshakes/Milkshakes";
 import Freshes from "./components/freshes/Freshes";
 import ExoticDrinks from "./components/exoticDrinks/ExoticDrinks";
+import HotDrinks from "./components/hotDrinks/HotDrinks";
+import IceCreams from "./components/iceCreams/IceCreams";
 
 const contentStyle = {
   height: '160px',
@@ -44,7 +46,7 @@ class AppHeaderInner extends React.Component<{}, {
     const { dotPosition } = this.state;
     return (
         <div className={styles.pageHome}>
-          <SodaMixes/>
+          <IceCreams/>
           {/*<Carousel className="homeCarousel" dotPosition={dotPosition as any}>*/}
           {/*  <smoothies/>*/}
           {/*  <div>*/}
@@ -85,6 +87,12 @@ const App: React.FC = () => {
               </Route>
               <Route path="/exotic-drinks">
                 <ExoticDrinks/>
+              </Route>
+              <Route path="/hot-drinks">
+                <HotDrinks/>
+              </Route>
+              <Route path="/ice-creams">
+                <IceCreams/>
               </Route>
               {/*-------------------------*/}
               <Route path="/workplace-safety">
