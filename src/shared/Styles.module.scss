@@ -5,14 +5,6 @@
     display: grid;
     width: ptr(860px);
     grid-template-columns: ptr(860px);
-    grid-template-rows: ptr(156px) 1fr;
-    margin: 5vw 0;
-  }
-
-  .pageLittleDt {
-    display: grid;
-    width: ptr(860px);
-    grid-template-columns: ptr(860px);
     grid-template-rows: ptr(140px) 1fr;
     margin: 5vw 0;
   }
@@ -37,15 +29,18 @@
     padding-left: ptr(150px);
   }
 
-  .listHeaderLittleCapacityDt {
+  @mixin listHeaderCapacityDtTemplate {
     @include flexRowRelative;
     width: 100%;
+  }
+
+  .listHeaderLittleCapacityDt {
+    @include listHeaderCapacityDtTemplate;
     padding-left: ptr(25px);
   }
 
   .listHeaderBigCapacityDt {
-    @include flexRowRelative;
-    width: 100%;
+    @include listHeaderCapacityDtTemplate;
     justify-content: flex-end;
     padding-right: ptr(25px);
   }
@@ -58,99 +53,64 @@
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .positionOnePriceDt {
+  @mixin positionPriceDtTemplate {
     display: grid;
     width: 100%;
-    grid-template-columns: ptr(62px) 1fr ptr(180px);
     grid-template-rows: ptr(46px);
     align-items: end;
     margin-top: ptr(8px);
+  }
+
+  .positionOnePriceDt {
+    @include positionPriceDtTemplate;
+    grid-template-columns: ptr(62px) 1fr ptr(180px);
   }
 
   .positionTwoPriceDt {
-    display: grid;
-    width: 100%;
+    @include positionPriceDtTemplate;
     grid-template-columns: ptr(62px) 1fr ptr(220px) ptr(180px);
-    grid-template-rows: ptr(46px);
-    align-items: end;
-    margin-top: ptr(8px);
+  }
+
+  @mixin positionImgDtTemplate {
+    @include flexRowRelative;
+    height: 100%;
+    width: 100%;
+    padding-right: ptr(16px);
+
+    img {
+      height: 100%;
+    }
   }
 
   .positionImgDt {
-    @include flexRowRelative;
-    height: 100%;
-    width: 100%;
-    padding-right: ptr(16px);
-
-    img {
-      height: 100%;
-    }
+    @include positionImgDtTemplate;
   }
 
   .positionDoubleStringImgDt {
-    @include flexRowRelative;
-    height: 100%;
-    width: 100%;
-    padding-right: ptr(16px);
+    @include positionImgDtTemplate;
     top: ptr(31px);
+  }
 
-    img {
-      height: 100%;
-    }
+  @mixin fontTitleDtTemplate {
+    @include flexRowRelative;
+    height: ptr(96px);
+    width: 100%;
+    justify-content: center;
+    font-family: "Truetypewriter PolyglOTT", sans-serif;
+    font-weight: normal;
+    font-size: ptr(92px);
+    color: white;
+    line-height: 1;
   }
 
   .fontTitleDt {
-    @include flexRowRelative;
-    height: ptr(96px);
-    width: 100%;
-    justify-content: center;
-    font-family: "Truetypewriter PolyglOTT", sans-serif;
-    font-weight: normal;
-    font-size: ptr(92px);
-    color: white;
-    line-height: 1;
-    margin-bottom: ptr(60px);
-  }
-
-  .fontTitleLittleDt {
-    @include flexRowRelative;
-    height: ptr(96px);
-    width: 100%;
-    justify-content: center;
-    font-family: "Truetypewriter PolyglOTT", sans-serif;
-    font-weight: normal;
-    font-size: ptr(92px);
-    color: white;
-    line-height: 1;
+    @include fontTitleDtTemplate;
     margin-bottom: ptr(44px);
   }
 
   .fontTitleInnerDt {
-    @include flexRowRelative;
-    height: ptr(96px);
-    width: 100%;
-    justify-content: center;
-    font-family: "Truetypewriter PolyglOTT", sans-serif;
-    font-weight: normal;
-    font-size: ptr(92px);
-    color: white;
-    line-height: 1;
-    margin: ptr(76px) 0 ptr(60px) 0;
-    //margin: ptr(46px) 0 ptr(30px) 0;
-  }
-
-  .fontTitleInnerLittleDt {
-    @include flexRowRelative;
-    height: ptr(96px);
-    width: 100%;
-    justify-content: center;
-    font-family: "Truetypewriter PolyglOTT", sans-serif;
-    font-weight: normal;
-    font-size: ptr(92px);
-    color: white;
-    line-height: 1;
+    @include fontTitleDtTemplate;
     margin: ptr(60px) 0 ptr(44px) 0;
-    //margin: ptr(46px) 0 ptr(30px) 0;
   }
 
   .fontPositionDt {

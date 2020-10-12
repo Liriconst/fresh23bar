@@ -37,7 +37,7 @@ export default class Smoothies extends React.Component<{
                     return (
                         <>
                             <Desktop>
-                                <div className={shared.pageLittleDt}>
+                                <div className={shared.pageDt}>
                                     <span className={shared.fontTitleDt}>АССОРТИМЕНТ СМУЗИ</span>
                                     <div>
                                         <>

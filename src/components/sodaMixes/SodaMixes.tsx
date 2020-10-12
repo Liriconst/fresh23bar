@@ -37,7 +37,7 @@ export default class SodaMixes extends React.Component<{
                     return (
                         <>
                             <Desktop>
-                                <div className={shared.pageLittleDt}>
+                                <div className={shared.pageDt}>
                                     <span className={shared.fontTitleDt}>ГАЗИРОВАННЫЕ НАПИТКИ</span>
                                     <div>
                                         {data.allSodaMixes.nodes.map((sodaPrice: any) => (

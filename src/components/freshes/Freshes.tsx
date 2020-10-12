@@ -75,7 +75,7 @@ export default class Freshes extends React.Component<{
                                                     <span className={shared.fontPositionDt} style={{textAlign: "right"}}>{freshPrice.priceBig}р</span>
                                                 </div>
                                         ))}
-                                        <span className={shared.fontTitleInnerLittleDt}>СВЕЖИЕ КОКТЕЙЛИ</span>
+                                        <span className={shared.fontTitleInnerDt}>СВЕЖИЕ КОКТЕЙЛИ</span>
                                         {data.allFreshes.nodes.filter((it: any) => !it.category).map((freshPrice: any) => (
                                             (freshPrice.nameDt2) ?
                                                 <>

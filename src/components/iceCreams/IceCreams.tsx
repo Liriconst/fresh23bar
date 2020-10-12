@@ -64,14 +64,14 @@ export default class IceCreams extends React.Component<{
                     return (
                         <>
                             <Desktop>
-                                <div className={shared.pageLittleDt}>
-                                    <span className={shared.fontTitleLittleDt}>МОРОЖЕНОЕ</span>
+                                <div className={shared.pageDt}>
+                                    <span className={shared.fontTitleInnerDt}>МОРОЖЕНОЕ</span>
                                     <div>
                                         <>
                                             {data.allIceCreamToppings.nodes.filter((it: any) => it.category).map((iceCreamToppingPrice: any) => (
                                                 <IceCreamToppingPosition iceCreamToppingPrice={iceCreamToppingPrice}/>
                                             ))}
-                                            <span className={shared.fontTitleInnerLittleDt}>ТОППИНГИ, ДОПЫ</span>
+                                            <span className={shared.fontTitleInnerDt}>ТОППИНГИ, ДОПЫ</span>
                                             {data.allIceCreamToppings.nodes.filter((it: any) => !it.category).map((iceCreamToppingPrice: any) => (
                                                 <IceCreamToppingPosition iceCreamToppingPrice={iceCreamToppingPrice}/>
                                             ))}

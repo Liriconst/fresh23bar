@@ -37,7 +37,7 @@ export default class Milkshakes extends React.Component<{
                     return (
                         <>
                             <Desktop>
-                                <div className={shared.pageLittleDt}>
+                                <div className={shared.pageDt}>
                                     <span className={shared.fontTitleDt}>МОЛОЧНЫЕ КОКТЕЙЛИ</span>
                                     <div>
                                         {data.allMilkshakes.nodes.map((milkshakePrice: any) => (

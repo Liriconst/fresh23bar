@@ -64,14 +64,14 @@ export default class ExoticDrinks extends React.Component<{
                     return (
                         <>
                             <Desktop>
-                                <div className={shared.pageLittleDt}>
-                                    <span className={shared.fontTitleLittleDt}>ЭКСКЛЮЗИВНЫЕ КОКТЕЙЛИ</span>
+                                <div className={shared.pageDt}>
+                                    <span className={shared.fontTitleDt}>ЭКСКЛЮЗИВНЫЕ КОКТЕЙЛИ</span>
                                     <div>
                                         <>
                                             {data.allExoticDrinks.nodes.filter((it: any) => it.category).map((exoticPrice: any) => (
                                                 <ExoticPosition exoticPrice={exoticPrice}/>
                                             ))}
-                                            <span className={shared.fontTitleInnerLittleDt}>ЭКЗОТИКА</span>
+                                            <span className={shared.fontTitleInnerDt}>ЭКЗОТИКА</span>
                                             {data.allExoticDrinks.nodes.filter((it: any) => !it.category).map((exoticPrice: any) => (
                                                 <ExoticPosition exoticPrice={exoticPrice}/>
                                             ))}

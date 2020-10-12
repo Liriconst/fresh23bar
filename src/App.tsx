@@ -46,7 +46,7 @@ class AppHeaderInner extends React.Component<{}, {
     const { dotPosition } = this.state;
     return (
         <div className={styles.pageHome}>
-          <IceCreams/>
+          <SodaMixes/>
           {/*<Carousel className="homeCarousel" dotPosition={dotPosition as any}>*/}
           {/*  <smoothies/>*/}
           {/*  <div>*/}
