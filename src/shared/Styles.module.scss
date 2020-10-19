@@ -3,10 +3,12 @@
 /*#region Desktop*/
   .pageDt {
     display: grid;
+    height: 100%;
     width: ptr(860px);
     grid-template-columns: ptr(860px);
     grid-template-rows: ptr(140px) 1fr;
-    margin: 5vw 0;
+    margin: 5vw;
+    overflow: hidden;
   }
 
   .listHeaderDt {

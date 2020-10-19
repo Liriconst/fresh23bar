@@ -1,10 +1,68 @@
 @import "shared/config";
 
-.pageHome {
-  @include flexRowRelative;
-  height: 100vh;
+.appHeader {
+  display: grid;
   width: 100vw;
+  justify-items: center;
+  grid-template-columns: 22.5vw 1fr 22.5vw;
+  grid-template-rows: 100vh;
+  overflow: hidden;
+}
+
+.appHeaderEndDt {
+  display: grid;
+  width: 22.5vw;
   justify-content: center;
+  grid-template-columns: 22.5vw;
+  grid-template-rows: ptr(295px) 1fr ptr(295px);
+  margin: 10vh 0 10vh 0;
+}
+
+@mixin appHeaderEndNameDtTemplate {
+  @include flexRowRelative;
+  height: ptr(295px);
+  width: 22.5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.appHeaderEndName1Dt {
+  @include appHeaderEndNameDtTemplate;
+  color: rgba(41, 191, 42, 0.5);
+  margin-bottom: ptr(20px);
+}
+
+.appHeaderEndImgDt {
+  display: grid;
+  height: 1fr;
+  width: 1fr;
+  justify-content: center;
+  margin-top: ptr(20px);
+
+  img {
+    height: 100%;
+  }
+}
+
+.appHeaderEndName2Dt {
+  @include appHeaderEndNameDtTemplate;
+  color: rgba(255, 78, 0, 0.5);
+  margin-top: ptr(20px);
+}
+
+.appHeaderEndFontDt {
+  @include flexRowRelative;
+  transform: rotate(-90deg);
+  font-family: "Schist Regular", sans-serif;
+  font-weight: 300;
+  font-size: ptr(36px);
+}
+
+.pageHome {
+  display: grid;
+  height: 150px;
+  width: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .testFonts {

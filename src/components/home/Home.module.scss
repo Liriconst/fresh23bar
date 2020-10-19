@@ -1,0 +1,101 @@
+@import "../../shared/config";
+
+.pageHomeDt {
+  display: grid;
+  height: 100vh;
+  width: ptr(594px);
+  justify-content: center;
+  grid-template-columns: ptr(594px);
+  grid-template-rows: ptr(320px) ptr(53px) ptr(53px) ptr(35px) ptr(77px) ptr(35px) ptr(77px) ptr(35px) 1fr;
+}
+
+.homeLogoDt {
+  @include flexRowRelative;
+  height: ptr(260px);
+  width: 100%;
+  justify-content: center;
+  margin: ptr(30px) 0;
+
+  img {
+    height: 100%;
+  }
+}
+
+@mixin homeTextDtTemplate {
+  @include flexRowRelative;
+  height: ptr(35px);
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: ptr(47px);
+  color: white;
+  line-height: 1;
+}
+
+.homeTextIndentedDt {
+  @include homeTextDtTemplate;
+  margin-bottom: ptr(18px);
+}
+
+.homeTextDt {
+  @include homeTextDtTemplate;
+}
+
+.homeScheduleBlockDt {
+  @include flexRowRelative;
+  height: ptr(35px);
+  width: 100%;
+  justify-content: center;
+}
+
+.homeTextScheduleDt {
+  @include homeTextDtTemplate;
+  font-weight: 300;
+}
+
+.homeNumberScheduleDt {
+  @include homeTextDtTemplate;
+  font-weight: 400;
+}
+
+.homeTextSuperscriptDt {
+  @include homeTextDtTemplate;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: ptr(25px);
+  padding-top: ptr(3px);
+}
+
+.homeSeparatorDt {
+  @include flexRowRelative;
+  height: ptr(3px);
+  width: 100%;
+  background: white;
+  margin: ptr(42px) 0 ptr(32px) 0;
+}
+
+.homeArrowDt {
+  @include flexRowRelative;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: ptr(127px);
+    animation: pulsar 2s ease-in-out infinite;
+  }
+
+  @keyframes pulsar {
+    from {
+      transform: scale(.85);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    to {
+      transform: scale(.85);
+    }
+  }
+}
